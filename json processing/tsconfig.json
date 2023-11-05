@@ -1,0 +1,31 @@
+{
+  "compilerOptions": {
+    /* Visit https://aka.ms/tsconfig to read more about this file */
+    /* Language and Environment */
+    "target": "es2016",
+
+    /* Modules */
+    "module": "CommonJS",
+    "moduleResolution": "node",
+    /* Enable importing .json files. */
+    "resolveJsonModule": true,
+    "esModuleInterop": true,
+    /* Emit additional JavaScript to ease support for importing CommonJS modules. This enables 'allowSyntheticDefaultImports' for type compatibility. */
+    // "preserveSymlinks": true,                         /* Disable resolving symlinks to their realpath. This correlates to the same flag in node. */
+    "forceConsistentCasingInFileNames": true,
+    /* Type Checking */
+    "strict": true,
+    /* Enable all strict type-checking options. */
+    "noImplicitAny": false,                            /* Enable error reporting for expressions and declarations with an implied 'any' type. */
+    "skipLibCheck": true,
+    /* Skip type checking all .d.ts files. */
+    "sourceMap": true,
+    "outDir": "./lib"
+  },
+  "ts-node": {
+    "transpileOnly": true,
+    // "swc": true
+  },
+  "include": ["./"],
+  "exclude": ["node_modules", "lib/**/*"]
+}
